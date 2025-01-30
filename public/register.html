@@ -157,18 +157,18 @@
             </div>
             <div class="form-group">
                 <label for="aadhar_number">Aadhar Number</label>
-                <input type="text" id="aadhar_number" maxlength="12" name="aadhar_number" required>
+                <input type="text" id="aadhar_number" maxlength="12" pattern="\d{12}" name="aadhar_number" placeholder="12-digit Aadhar Number" required>
             </div>
             <div class="form-group">
                 <label for="pan_number">PAN Number</label>
-                <input type="text" id="pan_number" maxlength="10"placeholder="PAN(5 letters + 4 digits)" name="pan_number">
+                <input type="text" id="pan_number" maxlength="10" pattern="[A-Z]{5}\d{4}[A-Z]" placeholder="ABCDE1234F" name="pan_number" required>
             </div>
             <div class="form-group">
                 <label for="driving_license">Driving License Number</label>
-                <input type="text" id="driving_license" maxlength="16" name="driving_license">
+                <input type="text" id="driving_license" maxlength="15" pattern="[A-Z]{2}\d{13}" name="driving_license" placeholder="AB1234567890123" required>
             </div>
             <div class="form-group">
-                <label for="occupation">Occupation</label>
+                <llabel for="occupation">Occupation</label>
                 <input type="text" id="occupation" name="occupation">
             </div>
             <div class="form-group">
